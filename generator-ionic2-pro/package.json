@@ -1,0 +1,24 @@
+{
+  "name": "generator-ionic2-pro",
+  "version": "0.0.1",
+  "description": "Generator for ionic 2",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ionic",
+    "2",
+    "generator"
+  ],
+  "files": [
+    "generators/app",
+    "generators/page",
+    "generators/router",
+    "generators/controller"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.20.2"
+  },
+  "author": "J Spencer <jspenc72@gmail.com> (https://github.com/jspenc72)",
+  "license": "ISC"
+}
