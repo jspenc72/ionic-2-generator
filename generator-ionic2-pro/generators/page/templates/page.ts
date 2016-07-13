@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  templateUrl: 'build/pages/account/<%= lowercase %>/<%= capitalized %>.html'
+  templateUrl: 'build/pages/<%= capitalized %>/<%= capitalized %>.html'
 })
 
 export class <%= capitalized %> {

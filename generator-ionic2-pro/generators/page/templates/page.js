@@ -15,7 +15,7 @@ var <%= capitalized %> = (function () {
     }
     <%= capitalized %> = __decorate([
         core_1.Component({
-            templateUrl: 'build/pages/<%= lowercase %>/<%= capitalized %>.html'
+            templateUrl: 'build/pages/<%= capitalized %>/<%= capitalized %>.html'
         }), 
         __metadata('design:paramtypes', [ionic_angular_1.NavController])
     ], <%= capitalized %>);

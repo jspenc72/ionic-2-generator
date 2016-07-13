@@ -35,7 +35,7 @@ module.exports = generators.Base.extend({
     htmlTemplate: function () {
             this.fs.copyTpl(
                 this.templatePath('page.html'),
-                this.destinationPath('./app/pages/'+this.props.name.toLowerCase()+'/'+this.props.name+'.html'), {
+                this.destinationPath('./app/pages/'+this.props.name+'/'+this.props.name+'.html'), {
                     name: this.props.name,
                     capitalized: capitalizeFirstLetter(this.props.name),
                     uppercase: this.props.name.toUpperCase(),
@@ -46,7 +46,7 @@ module.exports = generators.Base.extend({
     scssTemplate: function () {
             this.fs.copyTpl(
                 this.templatePath('page.scss'),
-                this.destinationPath('./app/pages/'+this.props.name.toLowerCase()+'/'+this.props.name+'.scss'), {
+                this.destinationPath('./app/pages/'+this.props.name+'/'+this.props.name+'.scss'), {
                     name: this.props.name,
                     capitalized: capitalizeFirstLetter(this.props.name),
                     uppercase: this.props.name.toUpperCase(),
@@ -57,7 +57,7 @@ module.exports = generators.Base.extend({
     tsTemplate: function () {
             this.fs.copyTpl(
                 this.templatePath('page.ts'),
-                this.destinationPath('./app/pages/'+this.props.name.toLowerCase()+'/'+this.props.name+'.ts'), {
+                this.destinationPath('./app/pages/'+this.props.name+'/'+this.props.name+'.ts'), {
                     name: this.props.name,
                     capitalized: capitalizeFirstLetter(this.props.name),
                     uppercase: this.props.name.toUpperCase(),
@@ -68,13 +68,21 @@ module.exports = generators.Base.extend({
     jsTemplate: function () {
             this.fs.copyTpl(
                 this.templatePath('page.js'),
-                this.destinationPath('./app/pages/'+this.props.name.toLowerCase()+'/'+this.props.name+'.js'), {
+                this.destinationPath('./app/pages/'+this.props.name+'/'+this.props.name+'.js'), {
                     name: this.props.name,
                     capitalized: capitalizeFirstLetter(this.props.name),
                     uppercase: this.props.name.toUpperCase(),
                     lowercase: this.props.name.toLowerCase()
                 }
             );
+        },
+    appendCSS: function() {
+          var path = "./app/theme/app.core.scss",
+              file = this.readFileAsString(path);
+              file += '\n@import "../pages/'+this.props.name+'/'+this.props.name+'";'
+          /* make modifications to the file string here */
+
+          this.write(path, file);
         }
   }
 });
