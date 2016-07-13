@@ -1,7 +1,7 @@
-[![Ionic Logo](https://s3.amazonaws.com/intrinio-production/images/Intrinio+Logo/IntrinioLogo-Green-optimized.png)](http://www.ionicframework.com)
+[![Ionic Logo](http://ionic.io/img/2.png)](http://www.ionicframework.com)
 
-# intrinio-client
-- **Unofficial** Yeoman [Generator](https://www.npmjs.com/package/generator-ionic2-pro) for [Ionic 2](http://www.intrinio.com)
+# generator-ionic2-pro 
+- **Unofficial** Yeoman [Generator](https://www.npmjs.com/package/generator-ionic2-pro) for [Ionic 2](http://ionicframework.com/docs/v2/getting-started/installation/)
 
 ## Quick Start
 
@@ -10,13 +10,14 @@ Install generator-ionic2-pro
 ## Installation
 
 ```bash
-$ npm i generator-ionic2-pro --save
+$ npm install generator-ionic2-pro --save
 ```
+
 ## Example Usage
 
 ```bash
-$ yo ionic-2-pro
-$ yo ionic-2-pro:page
+$ yo ionic-2-pro          //Displays Welcom Message
+$ yo ionic-2-pro:page     //Generates new page. Creates dire /app/pages/ with .html, .js, .ts and .scss with 
 $ yo ionic-2-pro:component
 $ yo ionic-2-pro:controller
 $ yo ionic-2-pro:service
