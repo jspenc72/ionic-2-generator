@@ -12,7 +12,8 @@
   "keywords": [
     "Ionic",
     "2",
-    "generator"
+    "generator",
+    "yeoman-generator"
   ],
   "files": [
     "generators/app",

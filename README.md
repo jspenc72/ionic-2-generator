@@ -16,11 +16,11 @@ $ npm install generator-ionic2-pro --save
 ## Example Usage
 
 ```bash
-$ yo ionic-2-pro          //Displays Welcom Message
-$ yo ionic-2-pro:page     //Generates new page. Creates dire /app/pages/ with .html, .js, .ts and .scss with 
-$ yo ionic-2-pro:component
-$ yo ionic-2-pro:controller
-$ yo ionic-2-pro:service
+$ yo ionic-2-pro          	//Displays Welcom Message
+$ yo ionic-2-pro:page     	//Generates new page. Creates dire /app/pages/ with .html, .js, .ts and .scss. Adds the scss @import statement to /app/theme/app.core.scss
+$ yo ionic-2-pro:component	//***Alpha*** Generates new component.
+$ yo ionic-2-pro:controller	//***Alpha*** Generates new controller.
+$ yo ionic-2-pro:service	//***Alpha*** Generates new service.
 ```
 
 
