@@ -4,7 +4,6 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 };
 
-
 module.exports = generators.Base.extend({
   // The name `constructor` is important here
   constructor: function () {
