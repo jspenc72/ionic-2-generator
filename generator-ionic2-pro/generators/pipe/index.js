@@ -19,8 +19,8 @@ module.exports = generators.Base.extend({
     this.prompt({
       type: 'input',
       name: 'name',
-      message: 'Enter Resource Name (MyResource)',
-      default: this.appname + "MyResource"
+      message: 'Enter Pipe Name (MyPipe)',
+      default: this.appname + "MyPipe"
     }, function(answers) {
       this.props = answers
 	    done();
@@ -30,8 +30,8 @@ module.exports = generators.Base.extend({
   writing: {
     tsTemplate: function () {
             this.fs.copyTpl(
-                this.templatePath('resource.ts'),
-                this.destinationPath('./app/resources/'+this.props.name+'/'+this.props.name+'.ts'), {
+                this.templatePath('pipe.ts'),
+                this.destinationPath('./app/pipes/'+this.props.name+'/'+this.props.name+'.ts'), {
                     name: this.props.name,
                     capitalized: capitalizeFirstLetter(this.props.name),
                     uppercase: this.props.name.toUpperCase(),
