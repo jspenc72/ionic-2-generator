@@ -6,6 +6,6 @@ import { NavController } from 'ionic-angular';
 })
 
 export class <%= capitalized %> {
-  constructor(private navController: NavController) {
+  constructor(private nav: NavController) {
   }
 }
