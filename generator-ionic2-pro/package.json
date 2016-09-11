@@ -25,7 +25,8 @@
     "generators/resource",
     "generators/pipe",
     "generators/service",
-    "generators/popover"
+    "generators/popover",
+    "generators/modal"
   ],
   "dependencies": {
     "yeoman-generator": "^0.20.2"

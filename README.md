@@ -10,7 +10,7 @@ Install generator-ionic2-pro
 ## Installation
 
 ```bash
-$ npm install generator-ionic2-pro --save
+$ npm install -g generator-ionic2-pro --save
 ```
 
 ## Example Usage
