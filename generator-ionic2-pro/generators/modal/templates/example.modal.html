@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Description
+      <%= capitalized %>
     </ion-title>
     <ion-buttons start>
       <button (click)="dismiss()">
@@ -15,18 +15,7 @@
 <ion-content>
   <ion-list>
       <ion-item>
-        <ion-avatar item-left>
-          <img src="{{character.image}}">
-        </ion-avatar>
-        <h2>{{character.name}}</h2>
-        <p>{{character.quote}}</p>
-      </ion-item>
-
-      <ion-item *ngFor="let item of character['items']">
-        {{item.title}}
-        <ion-note item-right>
-          {{item.note}}
-        </ion-note>
+        <h2><%= capitalized %></h2>
       </ion-item>
   </ion-list>
 </ion-content>

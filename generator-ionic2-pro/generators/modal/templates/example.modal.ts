@@ -4,7 +4,7 @@ import {ModalController, Platform, NavParams, ViewController} from 'ionic-angula
 @Component({
   templateUrl: './build/pages/modals/basic/modal-content.html'
 })
-class <%= capitalized %> {
+export class <%= capitalized %> {
 
   constructor( public platform: Platform, public params: NavParams, public viewCtrl: ViewController) {
 
